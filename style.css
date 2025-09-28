@@ -146,6 +146,21 @@ body{font-family:Arial;line-height:1.5;color:#333;margin:0}
   .main-photo {
     max-width: 90%;
   }
+  
+ .image-bg {
+    margin: 10px;         /* менші відступи */
+    height: 90%;          /* щоб не закривав фото */
+    border-radius: 12px;  /* трохи менше закруглення */
+  }
+
+  .main-photo {
+    max-width: 100%;      /* фото займає всю ширину контейнера */
+  }
+
+  .product-card {
+    position: static;     /* картка стає під фото */
+    margin-top: 15px;
+  }
 }
 
 @media (max-width:768px){
