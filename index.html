@@ -1,49 +1,48 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Alivio Landing Page</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-<div class="page">
 
-  <!-- MAIN CONTENT -->
-  <main class="main-content">
+  <!-- HEADER (full width) -->
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="logo">Alivio</div>
+      <ul class="menu">
+        <li><a href="#">Why Alivio</a></li>
+        <li><a href="#">Solutions</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Pricing</a></li>
+      </ul>
+      <div class="auth">
+        <a href="#" class="signin">Sign in</a>
+        <button class="btn-primary">Start Trial</button>
+      </div>
+    </nav>
+  </header>
 
-    <!-- HEADER -->
-    <header>
-      <nav class="navbar container">
-        <div class="logo">Alivio</div>
-        <ul class="menu">
-          <li><a href="#">Why Alivio</a></li>
-          <li><a href="#">Solutions</a></li>
-          <li><a href="#">Community</a></li>
-          <li><a href="#">Pricing</a></li>
-        </ul>
-        <div class="auth">
-          <a href="#" class="signin">Sign in</a>
-          <button class="btn-primary">Start Trial</button>
-        </div>
-      </nav>
-    </header>
-
-    <!-- HERO -->
-    <section class="hero">
+  <!-- HERO (full-bleed фон) -->
+  <section class="hero">
+    <div class="hero-inner">
       <div class="hero-text">
-        <h1>Be aware,<br> Manage well.</h1>
+        <h1>Be aware,<br/>Manage well.</h1>
         <p>
-          Everyone experiences stress in different ways.  
-          Let Alivio guide you, in a personalized journal experience,  
+          Everyone experiences stress in different ways.
+          Let Alivio guide you, in a personalized journal experience,
           to overcome your stress.
         </p>
         <button class="btn-primary">Find Your Way</button>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- STEPS -->
-    <section class="how-it-works">
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works">
+    <div class="section-inner">
       <header class="how-header">
         <div class="how-left">
           <h2>How it works</h2>
@@ -58,7 +57,7 @@
         </div>
       </header>
 
-      <div class="steps container">
+      <div class="steps">
         <article class="step">
           <span class="step-number">01</span>
           <h4>Personalize</h4>
@@ -80,75 +79,70 @@
           <img src="images/44.jpg" alt="Step 3">
         </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- SUCCESS STORY -->
-    <section class="success-story">
-      <div class="container story-content">
-        <div class="story-text">
-          <h2>Let's hear about <br> Kayla's success story</h2>
-          <p>See how well Alivio works in a real customer’s life.</p>
-          <button class="btn-primary">Let’s get started</button>
-        </div>
-        <div class="story-video">
-          <img src="images/5.jpg" alt="Success story video">
-          <div class="play-btn">&#9658;</div>
-        </div>
+  <!-- SUCCESS STORY -->
+  <section class="success-story">
+    <div class="section-inner story-content">
+      <div class="story-text">
+        <h2>Let's hear about <br> Kayla's success story</h2>
+        <p>See how well Alivio works in a real customer’s life.</p>
+        <button class="btn-primary">Let’s get started</button>
       </div>
-    </section>
+      <div class="story-video">
+        <img src="images/5.jpg" alt="Success story video">
+        <div class="play-btn">&#9658;</div>
+      </div>
+    </div>
+  </section>
 
-    <!-- PRODUCT -->
-    <section class="our-product">
-      <div class="container product-content">
-        <div class="product-image">
-          <div class="image-bg"></div>
-          <img src="images/6.png" alt="Product main image" class="main-photo">
+  <!-- PRODUCT -->
+  <section class="our-product">
+    <div class="section-inner product-content">
+      <div class="product-image">
+        <div class="image-bg"></div>
+        <img src="images/6.png" alt="Product main image" class="main-photo">
 
-          <div class="product-card">
-            <h5>Customized For</h5>
-            <div class="card-user">
-              <img src="images/6.png" alt="User">
-              <span>Kayla</span>
-            </div>
-            <p>Your custom contents</p>
-            <ul>
-              <li>Understand Your Stress</li>
-              <li>Anger Management</li>
-            </ul>
+        <div class="product-card">
+          <h5>Customized For</h5>
+          <div class="card-user">
+            <img src="images/6.png" alt="User">
+            <span>Kayla</span>
           </div>
-        </div>
-
-        <div class="product-text">
-          <span class="section-label">Our product</span>
-          <h2>
-            You tell us your stress,<br>
-            We make your diary
-          </h2>
-          <p>
-            Everyone experiences it, and in different ways.  
-            Let Alivio guide you, in a personalized journal experience,  
-            to overcome your stress.
-          </p>
-          <button class="btn-primary">Find Your Way</button>
+          <p>Your custom contents</p>
+          <ul>
+            <li>Understand Your Stress</li>
+            <li>Anger Management</li>
+          </ul>
         </div>
       </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer class="site-footer">
-      <div class="container footer-content">
-        <div class="footer-logo">Alivio</div>
-        <ul class="footer-menu">
-          <li><a href="#">Why Alivio</a></li>
-          <li><a href="#">Solutions</a></li>
-          <li><a href="#">Community</a></li>
-          <li><a href="#">Pricing</a></li>
-        </ul>
+      <div class="product-text">
+        <span class="section-label">Our product</span>
+        <h2>You tell us your stress,<br/>We make your diary</h2>
+        <p>
+          Everyone experiences it, and in different ways.
+          Let Alivio guide you, in a personalized journal experience,
+          to overcome your stress.
+        </p>
+        <button class="btn-primary">Find Your Way</button>
       </div>
-    </footer>
+    </div>
+  </section>
 
-  </main>
-</div>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="section-inner footer-content">
+      <div class="footer-logo">Alivio</div>
+      <ul class="footer-menu">
+        <li><a href="#">Why Alivio</a></li>
+        <li><a href="#">Solutions</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Pricing</a></li>
+      </ul>
+    </div>
+  </footer>
+
 </body>
 </html>
-
