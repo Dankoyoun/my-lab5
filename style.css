@@ -105,11 +105,30 @@ body{font-family:Arial;line-height:1.5;color:#333;margin:0}
 
 /* Адаптив */
 /* Смартфоны (до 768px) */
-@media (max-width: 768px) {
-  .image-bg { margin: 10px; height: auto; }
-  .main-photo { max-width: 100%; }
-  .product-card { position: static; margin-top: 15px; }
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .menu {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .auth {
+    flex-direction: row;
+  }
+  .hero-text h1 {
+    font-size: 40px;
+  }
+  .steps {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .story-content, .product-content {
+    flex-direction: column;
+  }
 }
+
 
 @media (max-width:768px){
   .navbar{flex-direction:column;gap:15px}
@@ -119,6 +138,7 @@ body{font-family:Arial;line-height:1.5;color:#333;margin:0}
   .hero-text h1{font-size:36px}
   .image-bg{margin:16px}
 }
+
 
 
 
