@@ -295,40 +295,6 @@ header { padding: 20px 0; }
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ===== Сайдбар ===== */
 .sidebar {
   width: 270px;
@@ -378,3 +344,4 @@ header { padding: 20px 0; }
   box-shadow:0 4px 12px rgba(0,0,0,.2);
 }
 .sidebar a.main:hover { background: linear-gradient(135deg, #bc8236, #ffd102); }
+
