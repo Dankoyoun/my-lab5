@@ -106,61 +106,9 @@ body{font-family:Arial;line-height:1.5;color:#333;margin:0}
 /* Адаптив */
 /* Смартфоны (до 768px) */
 @media (max-width: 768px) {
-  /* Навигация становится вертикальной */
-  .navbar {
-    flex-direction: column;
-    gap: 15px;
-  }
-  .menu {
-    flex-direction: column;
-    gap: 12px;
-  }
-  .auth {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  /* Герой-секция ниже и текст меньше */
-  .hero {
-    min-height: 460px;
-    padding: 40px 0;
-  }
-  .hero-text h1 {
-    font-size: 36px;
-  }
-
-  /* Подложка под фото продукта компактнее */
-  .image-bg {
-    margin: 16px;
-  }
-
-  /* Все основные блоки идут в колонку */
-  .steps,
-  .story-content,
-  .product-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* Картинка продукта шире */
-  .main-photo {
-    max-width: 90%;
-  }
-  
- .image-bg {
-    margin: 10px;         /* менші відступи */
-    height: 90%;          /* щоб не закривав фото */
-    border-radius: 12px;  /* трохи менше закруглення */
-  }
-
-  .main-photo {
-    max-width: 100%;      /* фото займає всю ширину контейнера */
-  }
-
-  .product-card {
-    position: static;     /* картка стає під фото */
-    margin-top: 15px;
-  }
+  .image-bg { margin: 10px; height: auto; }
+  .main-photo { max-width: 100%; }
+  .product-card { position: static; margin-top: 15px; }
 }
 
 @media (max-width:768px){
@@ -171,6 +119,7 @@ body{font-family:Arial;line-height:1.5;color:#333;margin:0}
   .hero-text h1{font-size:36px}
   .image-bg{margin:16px}
 }
+
 
 
 
