@@ -1,6 +1,11 @@
 /* База */
 *{box-sizing:border-box}
-body{font-family:Arial;line-height:1.5;color:#333;margin:0}
+body{font-family:Arial;line-height:1.5;color:#333;margin:0; overflow-x: hidden;}
+
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 /* Шапка – на всю ширину */
 .site-header{
@@ -200,7 +205,32 @@ body{font-family:Arial;line-height:1.5;color:#333;margin:0}
     gap: 10px;
     text-align: center;
   }
+  @media (max-width: 480px) {
+  .product-image {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-bg {
+    margin: 0;          /* прибираємо додаткові відступи */
+    width: 100%;
+    height: auto;
+  }
+
+  .main-photo {
+    max-width: 90%;     /* щоб фото не вилазило */
+    height: auto;
+  }
+    
+  .product-card {
+    position: static;   /* замість absolute */
+    margin-top: 15px;
+    width: 100%;
+    max-width: 300px;
+  }
 }
+  
+
 
 
 
