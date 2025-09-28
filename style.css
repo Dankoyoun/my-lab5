@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-  width: 1600px;
+  width: 100%;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -132,4 +132,5 @@ header { padding: 20px 0; }
   .story-content { flex-direction: column; }
   .container { width: 100%; padding: 0 15px; }
 }
+
 
