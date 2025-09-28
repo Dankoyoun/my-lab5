@@ -28,7 +28,6 @@ body{font-family:Arial;line-height:1.5;color:#333;margin:0}
 
 /* Секційні контейнери (контент по центру, фон – на всю ширину) */
 .section-inner{
-  max-width:1200px;
   margin:0 auto;
   padding:0 20px;
 }
@@ -138,6 +137,7 @@ body{font-family:Arial;line-height:1.5;color:#333;margin:0}
   .hero-text h1{font-size:36px}
   .image-bg{margin:16px}
 }
+
 
 
 
