@@ -1,0 +1,227 @@
+/* Основний контент */
+body {
+  font-family: Arial;
+  line-height: 1.5;
+  color: #333;
+}
+
+.page {
+  display: flex;
+  min-height: 100vh;
+  gap: 20px; 
+  padding: 20px;
+}
+
+.main-content {
+  padding: 20px;
+  background: #fff;
+  border-radius: 27px;
+  box-shadow: 0 4px 15px rgba(0,0,0,.3);
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.btn-primary {
+  padding: 12px 25px;
+  background: #007b5e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Навігація */
+header { padding: 20px 0; }
+.navbar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+.logo { font-weight: bold; font-size: 24px; color: #007b5e; }
+.menu { list-style: none; display: flex; gap: 30px; flex-wrap: wrap; }
+.menu a { text-decoration: none; color: #333; font-weight: 500; }
+.auth { display: flex; align-items: center; gap: 15px; flex-wrap: wrap; }
+.auth .signin { text-decoration: none; color: #333; }
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 600px;
+  padding-left: 10%;
+  background: linear-gradient(to right, rgba(255,255,255,0.9) 40%, rgba(255,255,255,0) 70%),
+  url("images/1.jpg") no-repeat center/cover;
+}
+.hero-text { max-width: 500px; }
+.hero-text h1 { font-size: 48px; color: #007b5e; margin-bottom: 20px; }
+.hero-text p { font-size: 18px; margin-bottom: 30px; color: #333; line-height: 1.6; }
+
+/* Steps */
+.how-header { display: flex; gap: 40px; max-width: 1100px; margin: 70px auto 60px; flex-wrap: wrap; }
+.how-left h2 { font-size: 16px; color: #777; margin-bottom: 10px; }
+.how-left h3 { font-size: 32px; color: #007b5e; font-weight: bold; line-height: 1.3; }
+.how-right p { font-size: 16px; color: #555; line-height: 1.6; padding-top: 20px; }
+
+.steps { display: flex; gap: 40px; flex-wrap: wrap; }
+.step { flex: 1; padding-left: 20px; }
+.step-number { font-size: 48px; font-weight: bold; color: #cce6de; margin-bottom: 10px; }
+.step h4 { font-size: 20px; margin-bottom: 15px; color: #333; }
+.step p { font-size: 15px; margin-bottom: 20px; color: #555; }
+.step img { width: 100%; border-radius: 10px; height: auto; }
+
+/* Success Story */
+.success-story { background: #005c4b; color: #fff; padding: 80px 20px; }
+.story-content { display: flex; align-items: center; gap: 40px; flex-wrap: wrap; }
+.story-text { flex: 1; }
+.story-text h2 { font-size: 32px; margin-bottom: 20px; }
+.story-text p { font-size: 18px; margin-bottom: 30px; }
+.story-video { position: relative; flex: 1; }
+.story-video img { max-width: 100%; border-radius: 10px; }
+.play-btn {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  background: rgba(0,0,0,.5);
+  border-radius: 50%;
+  width: 70px; height: 70px;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+}
+
+/* Product */
+.product-content { display: flex; align-items: center; gap: 60px; margin: 70px auto; flex-wrap: wrap; }
+.product-image { position: relative; flex: 1; display: flex; justify-content: center; }
+.image-bg { position: absolute; top: 0; left: 0; width: 100%; height: 95%; background: #d6f4ef; border-radius: 20px; margin: 30px; }
+.main-photo { position: relative; max-width: 70%; border-radius: 12px; }
+.product-card { position: absolute; bottom: -30px; left: -40px; background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,.1); width: 220px; }
+.card-user { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.card-user img { border-radius: 50%; background: #d6f4ef; width: 50px; height: 50px; }
+.product-text { flex: 1; }
+.product-text .section-label { font-size: 20px; font-weight: bold; color: #555; margin-bottom: 12px; }
+.product-text h2 { font-size: 38px; font-weight: 700; color: #007b5e; margin-bottom: 20px; line-height: 1.3; }
+.product-text p { font-size: 16px; color: #555; line-height: 1.6; margin-bottom: 30px; }
+
+/* Footer */
+.site-footer { background: #005c4b; color: #fff; padding: 60px 20px; }
+.footer-content { display: flex; flex-direction: column; }
+.footer-logo { font-size: 24px; font-weight: bold; margin-bottom: 30px; }
+.footer-menu { list-style: none; display: flex; flex-wrap: wrap; gap: 20px; }
+.footer-menu a { text-decoration: none; color: #fff; font-size: 16px; }
+.footer-menu a:hover { text-decoration: underline; }
+
+/*Адаптивність*/
+
+/*Планшети*/
+@media (max-width: 1024px) {
+  .steps, .product-content, .story-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .how-header { flex-direction: column; text-align: center; }
+}
+
+/*Смартфони*/
+@media (max-width: 768px) {
+  .navbar { flex-direction: column; gap: 15px; }
+  .menu { flex-direction: column; gap: 15px; }
+  .auth { flex-direction: column; gap: 10px; }
+  .steps { flex-direction: column; }
+  .product-content { flex-direction: column; }
+  .story-content { flex-direction: column; }
+  .container { width: 100%; padding: 0 15px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Сайдбар ===== */
+.sidebar {
+  width: 270px;
+  background: #00dd90da;
+  color:#fff;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 4px 20px rgba(0,0,0,.2);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:20px;
+}
+.sidebar h2 {
+  margin:0;
+  font-size:22px;
+  border-bottom:2px solid rgba(255,255,255,.3);
+  padding-bottom:12px;
+  text-align:center;
+}
+.sidebar ul { list-style:none; padding:0; width:100%; display:flex; flex-direction:column; gap:15px; }
+.sidebar a {
+  color:#fff;
+  text-decoration:none;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:14px 20px;
+  border-radius:16px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  box-shadow:0 4px 10px rgba(0,0,0,.15);
+  font-weight:600;
+  transition:.3s;
+}
+.sidebar a:hover { background: linear-gradient(135deg, #ff9a00, #ff6600); transform: translateY(-2px) scale(1.02); }
+.sidebar a.active {
+  background: linear-gradient(135deg, #ff9a00, #ff6600);
+  font-weight: 800;
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0,0,0,.2);
+  font-size: 16px;
+}
+.sidebar a.main {
+  background: linear-gradient(135deg, #6ee9ff, #00d0ff);
+  font-weight:800;
+  font-size: 17px;
+  box-shadow:0 4px 12px rgba(0,0,0,.2);
+}
+.sidebar a.main:hover { background: linear-gradient(135deg, #bc8236, #ffd102); }
