@@ -102,118 +102,105 @@ body{font-family:Arial;line-height:1.5;color:#333;margin:0}
 .footer-menu a{text-decoration:none;color:#fff;font-size:16px}
 .footer-menu a:hover{text-decoration:underline}
 
-/* Адаптив */
-/* Смартфоны (до 768px) */
-/* Телефони */
-@media (max-width: 480px) {
+/* ===================== */
+/* Планшет (768px – 1199px) */
+/* ===================== */
+@media (max-width: 1199px) and (min-width: 768px) {
   .page {
-    flex-direction: column; /* sidebar зверху */
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .story-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ===================== */
+/* Смартфон (до 767px) */
+/* ===================== */
+@media (max-width: 767px) {
+  .page {
+    flex-direction: column;
     padding: 10px;
   }
 
   .sidebar {
     width: 100%;
+    margin-bottom: 20px;
     text-align: center;
-    margin-bottom: 15px;
   }
 
-  .main-content {
-    padding: 15px;
-    border-radius: 15px;
-  }
-
-  /* Навігація */
   .navbar {
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
   }
 
   .menu {
     flex-direction: column;
     gap: 10px;
-    align-items: center;
   }
 
-  .auth {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  /* Hero */
   .hero {
-    min-height: 350px;
-    padding: 30px 15px;
+    min-height: auto;
+    padding: 20px;
+    background: #f9f9f9;
     text-align: center;
-    background: linear-gradient(to top, rgba(255,255,255,0.9), rgba(255,255,255,0.6)),
-      url("images/1.jpg") no-repeat center/cover;
-  }
-  .hero-text h1 {
-    font-size: 26px;
-  }
-  .hero-text p {
-    font-size: 15px;
   }
 
-  /* Steps */
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
   .steps {
     flex-direction: column;
     gap: 20px;
   }
+
   .step {
     padding-left: 0;
     text-align: center;
   }
-  .step-number {
-    font-size: 32px;
-  }
 
-  /* Success Story */
-  .story-content {
-    flex-direction: column;
-    text-align: center;
-  }
-  .story-video img {
-    max-width: 100%;
-  }
-
-  /* Product */
   .product-content {
     flex-direction: column;
     gap: 30px;
   }
-  .product-text h2 {
-    font-size: 24px;
-  }
-  .product-card {
-    position: static;
-    margin-top: 15px;
-    width: 100%;
-    max-width: 300px;
-  }
 
-  /* Footer */
-  .footer-content {
-    align-items: center;
+  .story-content {
+    flex-direction: column;
+    gap: 20px;
     text-align: center;
   }
+
   .footer-menu {
     flex-direction: column;
     gap: 10px;
+    text-align: center;
   }
 }
-
-
-@media (max-width:768px){
-  .navbar{flex-direction:column;gap:15px}
-  .menu{flex-direction:column;gap:12px}
-  .auth{flex-direction:column;gap:10px}
-  .hero{min-height:460px;padding:40px 0}
-  .hero-text h1{font-size:36px}
-  .image-bg{margin:16px}
-}
-
-
-
 
 
 
